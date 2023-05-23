@@ -2,6 +2,7 @@
 #define VECTOR_H
 
 #include <iostream>
+#include <assert.h>
 
 template <typename T> class myVector{
     private:
@@ -57,6 +58,8 @@ template <typename T> class myVector{
         //if index is in range
         if(index < size)
             return vec[index];
+        
+        assert(0);
     }
 
     //remove last element
