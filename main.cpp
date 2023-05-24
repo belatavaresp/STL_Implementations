@@ -27,4 +27,5 @@ int main(){
     cout << "Is 10 in tree? " << tree.lookup(10) << endl;
     cout << "Height: " << tree.height() << endl;
 
+    return 0;
 }
