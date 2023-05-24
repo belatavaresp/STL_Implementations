@@ -92,6 +92,16 @@ template <typename T> class myVector{
         }
         return -1;
     }
+
+    // access element at index
+    T& at(int index) {
+        if (index >= 0 && index < size) {
+            return vec[index];
+        }
+        else {
+            throw std::out_of_range("Index out of range");
+        }
+    }
 };
 
 #endif
