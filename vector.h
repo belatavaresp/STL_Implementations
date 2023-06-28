@@ -4,7 +4,7 @@
 #include <iostream>
 #include <assert.h>
 
-template <typename T> class myVector{
+template <typename T> class Vector{
     private:
     T* vec; //address
     int capacity; //total number of elements that fit the vector
@@ -12,14 +12,14 @@ template <typename T> class myVector{
 
     public:
     //constructor
-    myVector(){
+    Vector(){
         vec = new T[1];
         capacity = 1;
         size = 0;
     }
 
     //destructor
-    ~myVector(){
+    ~Vector(){
         delete [] vec;
     }
 
